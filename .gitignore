@@ -1,3 +1,1 @@
-.*
-!.gitignore
-!conf.php
+conf.php
