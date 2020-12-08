@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-family: "Lucida Console", Courier, ;
+   color: #000000;
+}
+
+.header img {
+  width: 15%;
+  height: auto;
+}
+  
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #4E2FFF
+}
+
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #17EBFF;
+  text-align: center;
+  font-family: "arial", sans-serif ;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Middle column */
+.column.middle {
+ 
+  background-color:#17EBFF;
+  text-align: center;
+  font-family: "Arial" , sans-serif ;
+  color: #4E2FFF;
+}
+
+
+/* Style the footer */
+.footer {
+  background-color:  #4E2FFF;
+  padding: 10px;
+  text-align: center;
+  color: #17EBFF;
+  font-family: "Lucida Console", Courier, ;
+
+}
+
+  
+ 
