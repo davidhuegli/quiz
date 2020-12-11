@@ -59,7 +59,7 @@ echo "Keine GameID gesetzt, normalerweise würde jetzt eine Weiterleitung kommen
 <html>
   <head>
   <link rel="stylesheet" type="text/css" href="style/quiz.css" />
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
+
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -73,8 +73,7 @@ echo "Keine GameID gesetzt, normalerweise würde jetzt eine Weiterleitung kommen
     <p>Game Pin <?php echo $gamepin?></p>
     <?php
 
-    echo "<img src='https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=http%3A%2F%2F10.20.20.127%2Fbegabtenfoerderung-lucien%2Fquiz%2Fplayer_gameplay.php%2F?gpin=$gamepin%2F&choe=UTF-8' title='Beim Quiz anmelden' />";
-
+    
     ?>
     <p></p>
 
@@ -99,7 +98,8 @@ echo "Keine GameID gesetzt, normalerweise würde jetzt eine Weiterleitung kommen
 
     <div class="box1">
       <?php echo $players;?> Teilnehmer beim Quiz
-      <p><?php $sql4 = "SELECT nickname FROM players WHERE gameid=$gamepin";
+      <p>
+        <?php $sql4 = "SELECT nickname FROM players WHERE gameid=$gamepin";
                 $result = $conn->query($sql4);
                 if ($result->num_rows > 0) {
                 // output data of each row
@@ -108,7 +108,10 @@ echo "Keine GameID gesetzt, normalerweise würde jetzt eine Weiterleitung kommen
                     echo "$nickname, ";
                   }
                 }
-                ?></p>
+                ?>
+                </p>
+                <img src='https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=http%3A%2F%2F10.20.20.127%2Fbegabtenfoerderung-lucien%2Fquiz%2Fplayer_gameplay.php%2F?gpin=$gamepin%2F&choe=UTF-8' title='Beim Quiz anmelden' />
+
     </div>
     <div class="box2">
       <p>

@@ -12,8 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 		$u_password = filter_var($_POST["user_password"], FILTER_SANITIZE_STRING);
 
 		$hash = hash(sha256, $u_password);
-		echo "$hash <br>";
-		echo "$u_name <br>";
+		//echo "$hash <br>";
+		//echo "$u_name <br>";
 
 	// Create connection
 	$conn = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_database);
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 	$sql = "SELECT pwhash FROM users WHERE username='$u_name'";
 	$result = $conn->query($sql);
 
-	echo $sql . "<br>";
+	//echo $sql . "<br>";
 
 
 
@@ -51,13 +51,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 					echo "Error: " . $sql . "<br>" . $conn->error;
 				}
 
-				header("refresh:5;url=quiz.php");
+				header("refresh:0;url=quiz.php");
 
 			} else {
 				echo "Benutzername und/oder Passwort nicht korrekt";
 
 				header("refresh:5;url=start.html");
-				exit(1);
+
 			}
 		}
 	}
