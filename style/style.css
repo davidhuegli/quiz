@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Oswald:wght@700&display=swap');
+
+
+
 body {
   margin: 0;
 }
@@ -32,7 +36,7 @@ body {
   display: block;
   color: #17EBFF;
   text-align: center;
-  font-family: "arial", sans-serif ;
+  font-family: "Times New Roman", Times, serif;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -92,9 +96,16 @@ div {
   padding: 10px;
   text-align: center;
   color: #17EBFF;
-  font-family: "Lucida Console", Courier, ;
-
+  
 }
 
-  
- 
+.podium {
+  background-image: url('../pics/konfetti.gif');
+  text-align: center;
+  height: 2000px;
+}
+
+
+
+
+
