@@ -102,8 +102,23 @@ div {
 .podium {
   background-image: url('../pics/konfetti.gif');
   text-align: center;
-  height: 2000px;
+  /*background: #CCC;
+  border: 1px solid #666;*/
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  /*color: #333;*/
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -400px;
+
+
 }
+
+
 
 
 

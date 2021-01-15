@@ -17,12 +17,11 @@ $player3 = "David";
   </head>
   <body>
     <div class="podium">
-    <p>
-    <img src="./pics/podium.png" alt="Podium" class="center"> <br>
       <h1>
         <?php echo $player2; ?> 
         <?php echo $player1; ?>
-        <?php echo $player3; ?> <br>
+        <?php echo $player3; ?> </h1> <br>
+        <img src="./pics/podium.png" alt="Podium" class="center"> <br>
     </div>
   </body>
 </html>
