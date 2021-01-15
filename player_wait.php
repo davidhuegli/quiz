@@ -13,28 +13,53 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO players (nickname, gameid, sessionid)
-          VALUES('$nickname', '$gpin', '$sid')";
-
-          if ($conn->query($sql) === TRUE) {
-            $success = true;
-          } else {
-            $success = false;
-          }
-
-$sql2 = "SELECT id FROM players WHERE nickname='$nickname'";
-$result = $conn->query($sql2);
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    $playerid = $row["id"];
+$sql0 = "SELECT started FROM game WHERE gamepin=$gpin";
+$result0 = $conn->query($sql0);
+if ($result0->num_rows > 0) {
+// output data of each row
+  while($row = $result0->fetch_assoc()) {
+    $isStarted = $row["started"];
   }
+  echo $isStarted;
 } else {
-  $success = false;
+  exit ("Das Game, für welches du dich anmelden wolltest, wurde nicht gefunden!");
 }
 
-$_SESSION["pid"] = $playerid;
-$_SESSION["gpin"] = $gpin;
+if ($isStarted == 0) {
+
+  $sql0 = "SELECT id FROM players WHERE nickname='$nickname'";
+        $result0 = $conn->query($sql0);
+        if ($result0->num_rows > 0) {
+            // output data of each row
+            while($row = $result0->fetch_assoc()) {
+              $exists = true;
+            }
+        } else {
+            $exists = false;
+            $sql = "INSERT INTO players (nickname, gameid, sessionid)
+                    VALUES('$nickname', '$gpin', '$sid')";
+
+                    if ($conn->query($sql) === TRUE) {
+                      $success = true;
+                    } else {
+                      $success = false;
+                    }
+
+            $sql2 = "SELECT id FROM players WHERE nickname='$nickname'";
+                  $result = $conn->query($sql2);
+                  if ($result->num_rows > 0) {
+                      // output data of each row
+                      while($row = $result->fetch_assoc()) {
+                        $playerid = $row["id"];
+                      }
+                  } else {
+                      $success = false;
+                  }
+
+                  $_SESSION["pid"] = $playerid;
+                  $_SESSION["gpin"] = $gpin;
+        }
+}
 
 ?>
 
@@ -44,7 +69,12 @@ $_SESSION["gpin"] = $gpin;
   </head>
   <body>
     <p>Willkommen, <?php echo "$nickname"?>!</p>
-    <?php if($success == false) {
+    <?php if($isStarted == 1) {
+      echo "Das Spiel ist bereits gestartet!";
+    } elseif($exists ==true) {
+      echo "Dein Spielername wurde bereis verwendet, benutze bitte einen anderen!";
+      header("refresh:5;url=player_login.php");
+    } elseif($success == false) {
       echo "Es ist ein Fehler mit unserer Datenbank aufgetreten!";
     } else {
       echo "Bitte warte, bis dein/e LehrerIn das Spiel startet";

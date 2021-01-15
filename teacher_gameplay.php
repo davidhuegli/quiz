@@ -24,14 +24,14 @@ if (isset($_GET["id"])) {
     echo $gamepin;
 
 
-    $sql = "INSERT INTO game (userid, quizid, gamepin, date)
-              VALUES('$userid', '$quizid', '$gamepin', '$time')";
+    $sql = "INSERT INTO game (userid, quizid, gamepin, date, started)
+              VALUES('$userid', '$quizid', '$gamepin', '$time', '0')";
 
-              if ($conn->query($sql) === TRUE) {
-                echo "Erfolg! Das Game wurde registriert!";
-              } else {
-                echo "Error: Game konnte nicht in der Datenbank registriert werden! Feher: " . $conn->error;
-              }
+    if ($conn->query($sql) === TRUE) {
+      echo "Erfolg! Das Game wurde registriert!";
+    } else {
+      echo "Error: Game konnte nicht in der Datenbank registriert werden! Fehler: " . $conn->error;
+    }
 
 
 
@@ -86,7 +86,7 @@ echo "Keine GameID gesetzt, normalerweise würde jetzt eine Weiterleitung kommen
       <a href="teacher_runquiz.php" style="float:right">start</a>
     </div>
 
-    <?php 
+    <?php
       $sql3 = "SELECT COUNT(nickname) AS total FROM players WHERE gameid=$gamepin";
       $result = $conn->query($sql3);
       if ($result->num_rows > 0) {

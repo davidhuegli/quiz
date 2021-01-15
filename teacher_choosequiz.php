@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 }
 
 session_start();
-$u_id = $_SESSION["userid"];
+//$u_id = $_SESSION["userid"];
 //                                     TODO: CHANGE
 
 ?>
@@ -30,10 +30,10 @@ $u_id = $_SESSION["userid"];
         <div class="header">
              <img src="pics/quiz_logo.png">
         </div>
-            
-       
-        
-          
+
+
+
+
           <div class="topnav">
             <a href="quiz.php">Quiz erstellen</a>
             <a href="quiz.php">Quiz bearbeiten</a>
@@ -44,19 +44,20 @@ $u_id = $_SESSION["userid"];
             <a href="logout.php" style="float:right">Logout</a>
           </div>
 
-       
-           
+
+
     <div class="column middle">
         <?php
-        $sql = "SELECT quiz.id,quizdesc.title from `quiz` INNER JOIN quizdesc ON quiz.quizdescid = quizdesc.id WHERE `userid` = '1'";
+        //$sql = "SELECT quiz.id,quizdesc.title from `quiz` INNER JOIN quizdesc ON quiz.quizdescid = quizdesc.id WHERE `userid` = '1'";
+        $sql = "SELECT DISTINCT quiz.quizdescid,quizdesc.title FROM `quiz` INNER JOIN quizdesc ON quiz.quizdescid = quizdesc.id WHERE `userid` = '1'";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
           // output data of each row
           while($row = $result->fetch_assoc()) {
-            echo "QuizID:" . $row["id"] . "<br> Quiztitel:" . $row["title"] . "  " . "<a href=teacher_gameplay.php?id=" . $row["id"] . ">Dieses Quiz auswählen</a><br><br>";
+            echo "QuizID:" . $row["quizdescid"] . "<br> Quiztitel:" . $row["title"] . "  " . "<a href=teacher_gameplay.php?id=" . $row["quizdescid"] . ">Dieses Quiz auswählen</a><br><br>";
             }
           }
-          
+
         ?>
 
 
@@ -65,7 +66,7 @@ $u_id = $_SESSION["userid"];
           <div class="footer">
             <p> &copy; by Rea & Lucien 2020</p>
           </div>
-        
-        
+
+
     </body>
 </html>
