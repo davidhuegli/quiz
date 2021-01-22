@@ -31,10 +31,18 @@ if ($conn->query($sql) === TRUE) {
         // output data of each row
         $_SESSION["questions"] = $result;
         $questionsfull = [];
+        $answer1 = [];
+        $answer2 = [];
+        $answer3 = [];
+        $answer4 = [];
         while ($row = $result->fetch_assoc()) {
             array_push($questions, $row["questionid"]);
             //array_push($questionsfull, $row["question"]);
             $questionfull[] = $row["question"];
+            $answer1[] = $row["answer1"];
+            $answer2[] = $row["answer2"];
+            $answer3[] = $row["answer3"];
+            $answer4[] = $row["answer4"];
         }
     }
 
@@ -58,23 +66,25 @@ GamePin3: <?php echo $gamepin; ?>
 alle Inhalte: <?php print_r($questions); ?><br>
 gesamte Anzahl im Array: <?php $sum = count($questions);
 echo $sum; ?><br>
-value 0 aus dem Array:
+value 0 aus dem Array (und Antworten):
 <?php
 if (isset($_SESSION["round"])) {
     $round = $_SESSION["round"];
     if ($round < $sum) {
         echo $round;
         echo $questionfull[$round];
-        //$round++;
-        //$_SESSION["round"] = $round;
-        header("refresh:5; url=teacher_runquiz-answers.php");
+        echo $answer1[$round];
+        echo $answer2[$round];
+        echo $answer3[$round];
+        echo $answer4[$round];
+        $round++;
+        $_SESSION["round"] = $round;
+        header("refresh:5; url=teacher_runquiz.php");
     } else {
         echo "Keine Fragen mehr, normalerweise käme jetzt die Auswertung!";
     }
 } else {
-    $round = 0;
-    $_SESSION["round"] = $round;
-    header("refresh:1; url=#");
+    header("refresh:1; url=teacher_runquiz.php");
 }
 
 

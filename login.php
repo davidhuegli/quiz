@@ -8,62 +8,61 @@ include 'conf.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 
 
-		$u_name = filter_var($_POST["user_name"], FILTER_SANITIZE_STRING); //set PHP variables like this so we can use them anywhere in code below
-		$u_password = filter_var($_POST["user_password"], FILTER_SANITIZE_STRING);
+    $u_name = filter_var($_POST["user_name"], FILTER_SANITIZE_STRING); //set PHP variables like this so we can use them anywhere in code below
+    $u_password = filter_var($_POST["user_password"], FILTER_SANITIZE_STRING);
 
-		$hash = hash(sha256, $u_password);
-		echo "$hash <br>";
-		echo "$u_name <br>";
+    $hash = hash(sha256, $u_password);
+    echo "$hash <br>";
+    echo "$u_name <br>";
 
-	// Create connection
-	$conn = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_database);
-	// Check connection
-	if ($conn->connect_error) {
-	die("Connection failed: " . $conn->connect_error);
-	}
+    // Create connection
+    $conn = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_database);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 
-	$sql = "SELECT pwhash FROM users WHERE username='$u_name'";
-	$result = $conn->query($sql);
+    $sql = "SELECT pwhash FROM users WHERE username='$u_name'";
+    $result = $conn->query($sql);
 
-	echo $sql . "<br>";
-
-
-
-	//require_once "inc\loginfunc.php";
-	//login("quiz.php", "start.html", $conn, $u_name, $hash, $result);
-
-	if ($result->num_rows > 0) {
-		// output data of each row
-		while($row = $result->fetch_assoc()) {
-		echo $row["pwhash"].  "<br>";
-			if ($hash == $row["pwhash"]) {
-				echo "Login erfolgreich :-)";
-				session_start();
-				$sid = session_id();
-					$_SESSION["user"] = $u_name;
-				echo " <br> SessionID: $sid <br>";
-
-				$sql = "UPDATE `users` SET `sessionid` = '$sid' WHERE `users`.`username` = '$u_name'";
-
-				if ($conn->query($sql) === TRUE) {
-					echo "New record created successfully";
-				} else {
-					echo "Error: " . $sql . "<br>" . $conn->error;
-				}
-
-				header("refresh:5;url=quiz.php");
-
-			} else {
-				echo "Benutzername und/oder Passwort nicht korrekt";
-
-				header("refresh:5;url=start.html");
-				exit(1);
-			}
-		}
-	}
+    echo $sql . "<br>";
 
 
-	$conn->close();
+    //require_once "inc\loginfunc.php";
+    //login("quiz.php", "start.html", $conn, $u_name, $hash, $result);
+
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while ($row = $result->fetch_assoc()) {
+            echo $row["pwhash"] . "<br>";
+            if ($hash == $row["pwhash"]) {
+                echo "Login erfolgreich :-)";
+                session_start();
+                $sid = session_id();
+                $_SESSION["user"] = $u_name;
+                echo " <br> SessionID: $sid <br>";
+
+                $sql = "UPDATE `users` SET `sessionid` = '$sid' WHERE `users`.`username` = '$u_name'";
+
+                if ($conn->query($sql) === TRUE) {
+                    echo "New record created successfully";
+                } else {
+                    echo "Error: " . $sql . "<br>" . $conn->error;
+                }
+
+                header("refresh:5;url=quiz.php");
+
+            } else {
+                echo "Benutzername und/oder Passwort nicht korrekt";
+
+                header("refresh:5;url=start.html");
+                exit(1);
+            }
+        }
+    }
+
+
+    $conn->close();
 
 
 }

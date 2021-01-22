@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59ae1eff-f6b9-4f07-828f-79f0d148e3ae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/inc/dbfunc.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/dbfunc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/loginfunc.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/loginfunc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_wait.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_wait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/quiz.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/quiz.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/quiz.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_choosequiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_choosequiz.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_gameplay.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_gameplay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_runquiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_runquiz.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nPw7IE1vJtCXllp4a250FAVpfN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\quiz" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59ae1eff-f6b9-4f07-828f-79f0d148e3ae" name="Default Changelist" comment="" />
+      <created>1611304866138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611304866138</updated>
+      <workItem from="1611304868470" duration="2803000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

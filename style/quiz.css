@@ -2,76 +2,74 @@
 
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Nerko one;
-  padding: 10px;
-  background: #f1f1f1;
+    font-family: Nerko one;
+    padding: 10px;
+    background: #f1f1f1;
 }
 
 /* Header/Blog Title */
 .header_game {
-  padding: 30px;
-  text-align: center;
-  background: #62E80B;
-  color: #4E2FFF;
-  font-size: 30px;
-  font-family: 'nerko one',  ;
-
+    padding: 30px;
+    text-align: center;
+    background: #62E80B;
+    color: #4E2FFF;
+    font-size: 30px;
+    font-family: 'nerko one',;
 
 
 }
 
 /* Style the top navigation bar */
 .topnav_game {
-  overflow: hidden;
-  background-color: #4E2FFF;
-  color: #62E80B;
+    overflow: hidden;
+    background-color: #4E2FFF;
+    color: #62E80B;
 }
-
 
 
 /* Style the topnav links */
 .topnav_game a {
-  float: left;
-  display: block;
-  color: #62E80B;
-  text-align: center;
-  font-family: "arial", sans-serif ;
-  padding: 14px 16px;
-  text-decoration: none;
-  background-color: #4E2FFF;
+    float: left;
+    display: block;
+    color: #62E80B;
+    text-align: center;
+    font-family: "arial", sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #4E2FFF;
 
 
 }
 
 .box1 {
-background: #62E80B;
-color: #4E2FFF;
-text-align: center;
-font-family: "arial", sans-serif ;
-font-family: "Cursive", Lucida Handwriting ;
-font-size: 40px;
+    background: #62E80B;
+    color: #4E2FFF;
+    text-align: center;
+    font-family: "arial", sans-serif;
+    font-family: "Cursive", Lucida Handwriting;
+    font-size: 40px;
 }
 
 .box2 {
-  background: #62E80B;
-  color: #4E2FFF;
-  text-align: center;
-  font-family: "arial", sans-serif ;
-  font-size: 15px;
-  
+    background: #62E80B;
+    color: #4E2FFF;
+    text-align: center;
+    font-family: "arial", sans-serif;
+    font-size: 15px;
+
 }
 
 /* Style the footer */
 .footer_game {
-  background-color: #62E80B;
-  padding: 10px;
-  text-align: center;
-  color: #4E2FFF;
-  font-family: "arial", sans-serif ;
-  font-size: 15px;
+    background-color: #62E80B;
+    padding: 10px;
+    text-align: center;
+    color: #4E2FFF;
+    font-family: "arial", sans-serif;
+    font-size: 15px;
 
 }
