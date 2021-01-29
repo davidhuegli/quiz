@@ -4,6 +4,7 @@ session_start();
 
 $gpin = $_POST["gpin"];
 $nickname = $_POST["nickname"];
+$_SESSION["nickname"] = $nickname;
 $sid = session_id();
 
 // Create connection
@@ -80,6 +81,7 @@ if ($isStarted == 0) {
     if ($sameuser == true) {
         if ($isStarted == 0) {
             echo "Bitte warte, bis dein/e LehrerIn das Spiel startet";
+            header("refresh:1; url=player_wait.php");
         } else {
             header("refresh:1; url=player_waitquestion.php");
         }
@@ -88,6 +90,7 @@ if ($isStarted == 0) {
     echo "Es ist ein Fehler mit unserer Datenbank aufgetreten!";
 } else {
     echo "Bitte warte, bis dein/e LehrerIn das Spiel startet";
+    header("refresh:1; url=player_wait.php");
 } ?>
 
 </body>
