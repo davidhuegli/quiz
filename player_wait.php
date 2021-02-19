@@ -2,9 +2,16 @@
 include 'conf.php';
 session_start();
 
-$gpin = $_POST["gpin"];
-$nickname = $_POST["nickname"];
-$_SESSION["nickname"] = $nickname;
+if(isset($_POST["gpin"])){
+    $gpin = $_POST["gpin"];
+    $nickname = $_POST["nickname"];
+    $_SESSION["nickname"] = $nickname;
+    $_SESSION["gamepin"] = $gpin;
+} else {
+    $nickname = $_SESSION["nickname"];
+    $gpin = $_SESSION["gamepin"];
+}
+
 $sid = session_id();
 
 // Create connection
@@ -14,7 +21,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql0 = "SELECT started FROM game WHERE gamepin=$gpin";
+$sql0 = "SELECT started FROM game WHERE gamepin='$gpin'";
 $result0 = $conn->query($sql0);
 if ($result0->num_rows > 0) {
 // output data of each row
@@ -26,7 +33,7 @@ if ($result0->num_rows > 0) {
     exit ("Das Game, für welches du dich anmelden wolltest, wurde nicht gefunden!");
 }
 
-if ($isStarted == 0) {
+if ($isStarted >= 0) {
 
     $sql0 = "SELECT id,sessionid FROM players WHERE nickname='$nickname'";
     $result0 = $conn->query($sql0);
@@ -73,19 +80,21 @@ if ($isStarted == 0) {
 </head>
 <body>
 <p>Willkommen, <?php echo "$nickname" ?>!</p>
-<?php if ($isStarted == 1) {
-    echo "Das Spiel ist bereits gestartet!";
-} elseif ($exists == true) {
-    echo "Dein Spielername wurde bereis verwendet, benutze bitte einen anderen!";
+<?php
+if ($exists == true) {
     header("refresh:5;url=player_login.php");
     if ($sameuser == true) {
         if ($isStarted == 0) {
             echo "Bitte warte, bis dein/e LehrerIn das Spiel startet";
             header("refresh:1; url=player_wait.php");
         } else {
+            echo "Dein Spielername wurde bereis verwendet, benutze bitte einen anderen!";
             header("refresh:1; url=player_waitquestion.php");
         }
     }
+}
+elseif ($isStarted == 1) {
+    echo "Das Spiel ist bereits gestartet!";
 } elseif ($success == false) {
     echo "Es ist ein Fehler mit unserer Datenbank aufgetreten!";
 } else {

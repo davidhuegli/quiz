@@ -39,8 +39,8 @@ if ($conn->query($sql) === TRUE) {
     }
 
     $sql2 = "SELECT started FROM `game` WHERE `id` = '$gameid'";
-    $result = $conn->query($sql);
-        if ($result->num_rows > 0) {
+    $result2 = $conn->query($sql2);
+        if ($result2->num_rows > 0) {
             // output data of each row
             $startedvalue = $row["started"];
         }
@@ -71,12 +71,13 @@ value 0 aus dem Array:
 if (isset($_SESSION["round"])) {
     $round = $_SESSION["round"];
     if ($round < $sum) {
-        /*$startedvalue++;
+        $startedvalue++;
+        echo "Startetvalue: $startedvalue <br>";
         $sql3 = "UPDATE `game` SET `started` = '$startedvalue' WHERE `id` = '$gameid'";
 
         if ($conn->query($sql) === TRUE) {
             echo "Erfolg! Das Game wurde gestartet! <br>";
-        }*/
+        }
         echo $round;
         echo $questionfull[$round];
         //$round++;

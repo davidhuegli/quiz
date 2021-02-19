@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player_runquiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_runquiz.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player_wait.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_wait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player_waitquestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_waitquestion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teacher_runquiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_runquiz.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +27,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -37,22 +38,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611908423690</updated>
-      <workItem from="1611908426058" duration="3735000" />
+      <workItem from="1611908426058" duration="4244000" />
+      <workItem from="1612517680479" duration="2878000" />
+      <workItem from="1613723631610" duration="3851000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/teacher_runquiz-answers.php</url>
-          <line>2</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="WindowStateProjectService">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1613723562703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1613723562703" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1613727188224">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613727188224" />
   </component>
 </project>
