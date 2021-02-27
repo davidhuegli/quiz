@@ -1,4 +1,15 @@
-<?php //TODO: NEXT, add waittime for player, when only question is displayed on screen
+<?php
+
+//
+// Question-Screen (showing Answers) for unregistered Users / Students
+//
+// Previous Page: player_wait.php
+// Next Pages:
+//      Running Quiz:       player_runquiz.php
+//      No Questions left:  player_result.php
+//
+
+//TODO: NEXT, add waittime for player, when only question is displayed on screen
 include 'conf.php';
 session_start();
 

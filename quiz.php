@@ -1,5 +1,20 @@
 <?php
 
+
+//
+// Dashboard for registered Users / Teachers
+//
+// Previous Page: login.php
+// Next Pages:
+//     Create Quiz:        tbd.
+//     Edit Quiz:          tbd.
+//     Start Quiz:         teacher_choosequiz.php
+//     Create Question:    tbd.
+//     Edit Question:      tbd.
+//     Logout:             logout.php
+//
+
+
 // Check Login
 session_start();
 $sid = session_id();

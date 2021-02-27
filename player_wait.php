@@ -1,4 +1,14 @@
 <?php
+
+//
+// Waiting Screen for unregistered Users / Students
+//
+// Previous Page: player_login.php
+// Next Page: player_waitquestion.php
+//
+
+
+
 include 'conf.php';
 session_start();
 

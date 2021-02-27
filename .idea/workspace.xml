@@ -20,13 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6085cd39-fc72-4dbc-9337-c0d80122f5e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/control.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/control.php" beforeDir="false" afterPath="$PROJECT_DIR$/control.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_result.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player_runquiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_runquiz.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player_wait.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_wait.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player_waitquestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_waitquestion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/podium.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_podium.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/quiz.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_choosequiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_choosequiz.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teacher_gameplay.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_gameplay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_result.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teacher_runquiz-answers.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_runquiz-answers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teacher_runquiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_runquiz.php" afterDir="false" />
     </list>
@@ -51,7 +60,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -79,6 +88,7 @@
       <workItem from="1612517680479" duration="2878000" />
       <workItem from="1613723631610" duration="4017000" />
       <workItem from="1614327441668" duration="5058000" />
+      <workItem from="1614416434349" duration="2408000" />
     </task>
     <servers />
   </component>
@@ -95,6 +105,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="707" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1614329153108">
@@ -105,9 +116,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614332483922" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1613723562703">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2381" y="165" key="SettingsEditor" timestamp="1614416582520">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614416462279" />
+    <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614416582520" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1613723562703" />
     <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1614331607250">
       <screen x="0" y="0" width="1920" height="1040" />

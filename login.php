@@ -1,4 +1,12 @@
 <?php
+
+//
+// Backend for Login Page for registered Users / Teachers
+//
+// Previous Page: start.html
+// Next Page: quiz.php
+//
+
 include 'conf.php';
 
 //foreach (glob("inc\*.php") as $filename) {

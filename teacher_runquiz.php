@@ -1,4 +1,14 @@
 <?php
+
+//
+// Running Quiz, show Questions without answers
+//
+// Previous Page: teacher_gameplay.php
+// Next Pages:
+//      Ping-Pong while showing Questions:  teacher_runquiz-answers.php
+//      End of Ping-Pong in:                teacher_runquiz-answers.php
+//
+
 include 'conf.php';
 session_start();
 

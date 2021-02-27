@@ -1,4 +1,12 @@
 <?php
+
+//
+// Quiz Login Page for unregistered Users / Students
+//
+// Previous Page: /
+// Next Page: player_wait.php
+//
+
 include 'conf.php';
 session_start();
 

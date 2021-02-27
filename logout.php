@@ -1,4 +1,12 @@
 <?php
+
+//
+// Logout Function (no Frontend)
+//
+// Previous Page: quiz.php
+// Next Page: start.html
+//
+
 include 'conf.php';
 
 foreach (glob("inc\*.php") as $filename) {

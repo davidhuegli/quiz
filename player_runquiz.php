@@ -1,4 +1,12 @@
 <?php
+
+//
+// Question register Page unregistered Users / Students
+//
+// Previous Page: player_waitquestion.php
+// Next Page: player_waitquestion.php (loopback)
+//
+
 include 'conf.php';
 session_start();
 

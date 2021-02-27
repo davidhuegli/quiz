@@ -1,4 +1,12 @@
 <?php
+
+//
+// Lobby Screen when Game started for registered Users / Teachers
+//
+// Previous Page: teacher_choosequiz.php
+// Next Page: teacher_runquiz.php
+//
+
 include 'conf.php';
 
 // Login Check Missing

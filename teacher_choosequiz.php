@@ -1,4 +1,12 @@
 <?php
+
+//
+// Site to choose a Quiz for registered Users / Teachers
+//
+// Previous Page: quiz.php
+// Next Page: teacher_gameplay.php
+//
+
 include 'conf.php';
 
 // Login Check Missing

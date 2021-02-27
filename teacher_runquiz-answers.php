@@ -1,4 +1,14 @@
 <?php
+
+//
+// Running Quiz, show Questions with answers
+//
+// Previous Page: teacher_runquiz.php
+// Next Pages:
+//      Ping-Pong while showing Questions:  teacher_runquiz.php
+//      End of Ping-Pong:                   teacher_result.php, redirection tbd.
+//
+
 include 'conf.php';
 session_start();
 
