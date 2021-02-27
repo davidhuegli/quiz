@@ -11,6 +11,9 @@ header("refresh:1; url=player_waitquestion.php");
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style/quiz.css"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 </head>
 <body>
 <a href="player_runquiz.php?answerid=1">Antwort 1</a>

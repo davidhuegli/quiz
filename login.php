@@ -8,7 +8,7 @@ include 'conf.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 
 
-    $u_name = filter_var($_POST["user_name"], FILTER_SANITIZE_STRING); //set PHP variables like this so we can use them anywhere in code below
+    $u_name = filter_var($_POST["user_name"], FILTER_SANITIZE_STRING);
     $u_password = filter_var($_POST["user_password"], FILTER_SANITIZE_STRING);
 
     $hash = hash(sha256, $u_password);
@@ -21,8 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-
-    $sql = "SELECT pwhash FROM users WHERE username='$u_name'";
+    //TODO: select uID from DB and set Session-Variable
+    $sql = "SELECT pwhash,id FROM users WHERE username='$u_name'";
     $result = $conn->query($sql);
 
     echo $sql . "<br>";
@@ -35,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
         // output data of each row
         while ($row = $result->fetch_assoc()) {
             echo $row["pwhash"] . "<br>";
+            $_SESSION["userid"] = $row["id"];
             if ($hash == $row["pwhash"]) {
                 echo "Login erfolgreich :-)";
                 session_start();

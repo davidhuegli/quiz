@@ -83,6 +83,9 @@ if (isset($_GET["id"])) {
 <div class="topnav_game">
     <a href="teacher_choosequiz.php">zur&uuml;ck</a>
     <a href="teacher_runquiz.php" style="float:right">start</a>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 </div>
 
 <?php

@@ -25,6 +25,7 @@ $time = date("Y-m-d H:i:s");
 
 $sql0 = "SELECT started FROM game WHERE gamepin=$gpin";
 $result0 = $conn->query($sql0);
+// if game started
 if ($result0->num_rows > 0) {
 // output data of each row
     while ($row = $result0->fetch_assoc()) {
@@ -36,7 +37,7 @@ if ($result0->num_rows > 0) {
 }
 
 //TODO: Check, if answer was right, then set $right
-    $right = "";
+    $right = true;
 
     if (isset($_GET["answerid"])) {
         $answerid = $_GET["answerid"];

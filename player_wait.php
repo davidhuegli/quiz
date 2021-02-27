@@ -35,7 +35,7 @@ if ($result0->num_rows > 0) {
 
 if ($isStarted >= 0) {
 
-    $sql0 = "SELECT id,sessionid FROM players WHERE nickname='$nickname'";
+    $sql0 = "SELECT id,sessionid FROM players WHERE nickname='$nickname' AND gameid='$gpin'";
     $result0 = $conn->query($sql0);
     if ($result0->num_rows > 0) {
         // output data of each row
@@ -56,7 +56,7 @@ if ($isStarted >= 0) {
             $success = false;
         }
 
-        $sql2 = "SELECT id FROM players WHERE nickname='$nickname'";
+        $sql2 = "SELECT id FROM players WHERE nickname='$nickname' AND gameid='$gpin'";
         $result = $conn->query($sql2);
         if ($result->num_rows > 0) {
             // output data of each row
@@ -77,6 +77,9 @@ if ($isStarted >= 0) {
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style/quiz.css"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 </head>
 <body>
 <p>Willkommen, <?php echo "$nickname" ?>!</p>

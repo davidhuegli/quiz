@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6085cd39-fc72-4dbc-9337-c0d80122f5e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/control.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player_runquiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_runquiz.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player_wait.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_wait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_waitquestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_waitquestion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_gameplay.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_gameplay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_runquiz-answers.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_runquiz-answers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teacher_runquiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_runquiz.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +50,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -40,21 +77,49 @@
       <updated>1611908423690</updated>
       <workItem from="1611908426058" duration="4244000" />
       <workItem from="1612517680479" duration="2878000" />
-      <workItem from="1613723631610" duration="3851000" />
+      <workItem from="1613723631610" duration="4017000" />
+      <workItem from="1614327441668" duration="5058000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="707" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1614329153108">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="707" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1614329153108" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1614332483922">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614332483922" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1613723562703">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1613723562703" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1614331607250">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614331607250" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1613727188224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613727188224" />
+    <state x="1137" y="266" width="672" height="678" key="search.everywhere.popup" timestamp="1614329141960">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1137" y="266" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614329141960" />
   </component>
 </project>
