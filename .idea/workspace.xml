@@ -20,22 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6085cd39-fc72-4dbc-9337-c0d80122f5e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/control.php" beforeDir="false" afterPath="$PROJECT_DIR$/control.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_result.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player_runquiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_runquiz.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player_wait.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_wait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player_waitquestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_waitquestion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/podium.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_podium.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/quiz.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/start.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher_choosequiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_choosequiz.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher_gameplay.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_gameplay.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_result.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_podium.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_podium.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teacher_runquiz-answers.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_runquiz-answers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teacher_runquiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_runquiz.php" afterDir="false" />
     </list>
@@ -89,6 +77,9 @@
       <workItem from="1613723631610" duration="4017000" />
       <workItem from="1614327441668" duration="5058000" />
       <workItem from="1614416434349" duration="2408000" />
+      <workItem from="1614932334419" duration="4730000" />
+      <workItem from="1615043466048" duration="606000" />
+      <workItem from="1615536828260" duration="3270000" />
     </task>
     <servers />
   </component>

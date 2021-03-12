@@ -81,23 +81,35 @@ gesamte Anzahl im Array: <?php $sum = count($questions);
 echo $sum; ?><br>
 value 0 aus dem Array:
 <?php
+
+$currentquestion = $_SESSION["currentquestion"];
+
+echo $startedvalue;
+
+
 if (isset($_SESSION["round"])) {
     $round = $_SESSION["round"];
     if ($round < $sum) {
-        $startedvalue++;
-        echo "Startetvalue: $startedvalue <br>";
-        $sql3 = "UPDATE `game` SET `started` = '$startedvalue' WHERE `id` = '$gameid'";
-
         if ($conn->query($sql) === TRUE) {
             echo "Erfolg! Das Game wurde gestartet! <br>";
         }
         echo $round;
         echo $questionfull[$round];
+
+        $sql3 = "UPDATE `game` SET `currentquestion` = '$currentquestion' WHERE `id` = '$gameid'";
+        if ($conn->query($sql3) === TRUE) {
+            echo "CurrentQuestion erfolgreich zu $currentquestion gesetzt! <br>";
+        }
+        $currentquestion++;
+
+        $_SESSION["currentquestion"] = $currentquestion;
+
         //$round++;
         //$_SESSION["round"] = $round;
         header("refresh:5; url=teacher_runquiz-answers.php");
     } else {
         echo "Keine Fragen mehr, normalerweise käme jetzt die Auswertung!";
+        header("refresh:3; url=teacher_podium.php");
     }
 } else {
     $round = 0;

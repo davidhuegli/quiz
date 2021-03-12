@@ -95,6 +95,7 @@ if (isset($_SESSION["round"])) {
         header("refresh:5; url=teacher_runquiz.php");
     } else {
         echo "Keine Fragen mehr, normalerweise käme jetzt die Auswertung!";
+        header("refresh:3; url=teacher_podium.php");
     }
 } else {
     header("refresh:1; url=teacher_runquiz.php");
