@@ -26,7 +26,7 @@ if (isset($_SESSION["gamepin"])) {
     echo "Keine GameID gesetzt, normalerweise würde jetzt eine Weiterleitung kommen...";
 }
 
-$sql = "SELECT playerid as player,sum(points) as psum FROM results WHERE `gamepin` = '$gamepin' GROUP BY playerid ORDER BY points ASC";
+$sql = "SELECT playerid as player,sum(points) as psum FROM results WHERE `gamepin` = '$gamepin' GROUP BY playerid ORDER BY points DESC";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
