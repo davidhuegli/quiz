@@ -5,8 +5,8 @@
 //
 // Previous Page: teacher_runquiz.php
 // Next Pages:
-//      Ping-Pong while showing Questions:  teacher_runquiz.php
-//      End of Ping-Pong:                   teacher_result.php, redirection tbd.
+//      Ping-Pong while showing Questions:  teacher_qresult.php
+//      End of Ping-Pong:                   teacher_result.php
 //
 
 include 'conf.php';
@@ -92,7 +92,7 @@ if (isset($_SESSION["round"])) {
         echo $answer4[$round];
         $round++;
         $_SESSION["round"] = $round;
-        header("refresh:5; url=teacher_runquiz.php");
+        header("refresh:5; url=teacher_qresult.php");
     } else {
         echo "Keine Fragen mehr, normalerweise käme jetzt die Auswertung!";
         header("refresh:3; url=teacher_podium.php");
@@ -101,6 +101,12 @@ if (isset($_SESSION["round"])) {
     header("refresh:1; url=teacher_runquiz.php");
 }
 
+
+$sql = "UPDATE `game` SET `started` = 2 WHERE `id` = '$gameid'";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Erfolg! Das Game wurde gestartet! <br>";
+}
 
 ?>
 <br>

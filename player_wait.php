@@ -99,7 +99,7 @@ if ($exists == true) {
     if ($sameuser == true) {
         if ($isStarted == 0) {
             echo "Bitte warte, bis dein/e LehrerIn das Spiel startet";
-            header("refresh:1; url=player_wait.php");
+            header("refresh:3; url=player_wait.php");
         } else {
             echo "Dein Spielername wurde bereis verwendet, benutze bitte einen anderen!";
             header("refresh:1; url=player_waitquestion.php");
@@ -112,7 +112,7 @@ elseif ($isStarted == 1) {
     echo "Es ist ein Fehler mit unserer Datenbank aufgetreten!";
 } else {
     echo "Bitte warte, bis dein/e LehrerIn das Spiel startet";
-    header("refresh:1; url=player_wait.php");
+    header("refresh:3; url=player_wait.php");
 } ?>
 
 </body>
