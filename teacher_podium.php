@@ -26,6 +26,12 @@ if (isset($_SESSION["gamepin"])) {
     echo "Keine GameID gesetzt, normalerweise würde jetzt eine Weiterleitung kommen...";
 }
 
+$sql0 = "UPDATE `game` SET `started` = 3 WHERE `id` = '$gameid'";
+
+if ($conn->query($sql0) === TRUE) {
+    echo "Erfolg! Das Game wurde beendet! <br>";
+}
+
 $sql = "SELECT playerid as player,sum(points) as psum FROM results WHERE `gamepin` = '$gamepin' GROUP BY playerid ORDER BY points DESC";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {

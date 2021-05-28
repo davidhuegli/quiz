@@ -101,7 +101,7 @@ if ($exists == true) {
             echo "Bitte warte, bis dein/e LehrerIn das Spiel startet";
             header("refresh:3; url=player_wait.php");
         } else {
-            echo "Dein Spielername wurde bereis verwendet, benutze bitte einen anderen!";
+            echo "Spiel startet!";
             header("refresh:1; url=player_waitquestion.php");
         }
     }

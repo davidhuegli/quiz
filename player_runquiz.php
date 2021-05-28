@@ -10,9 +10,10 @@
 include 'conf.php';
 session_start();
 
+
 if(isset($_GET["answerid"])){
     $answer = $_GET["answerid"];
-    $redirect = false;
+    $redirect = true;
 } else if(isset($_GET["redirect"])){
         $redirect = true;
 } else {
@@ -23,6 +24,7 @@ if(isset($_POST["gpin"])){
     $nickname = $_POST["nickname"];
     $_SESSION["nickname"] = $nickname;
     $_SESSION["gamepin"] = $gpin;
+    $answer = $_GET["answerid"];
 } else {
     $nickname = $_SESSION["nickname"];
     $gpin = $_SESSION["gamepin"];
@@ -56,7 +58,7 @@ function redirect() {
             header("refresh:3; url=player_runquiz.php?redirect=1");
             break;
         case 2:
-            header("refresh:3; url=player_player_stats.php?redirect=1"); //TODO: player_stats.php und dann von dort aus die Weiterleitung nach Bild auf Handy machen
+            header("refresh:3; url=player_stats.php?redirect=1"); //TODO: player_stats.php und dann von dort aus die Weiterleitung nach Bild auf Handy machen
             break;
         default:
             break;
@@ -65,6 +67,16 @@ function redirect() {
 
 
 }
+
+
+
+
+
+
+
+
+
+
 
 if($redirect) {
 
@@ -75,10 +87,12 @@ if($redirect) {
         die("Connection failed: " . $conn->connect_error);
     }
 
+
+
     $nickname = $_SESSION["nickname"];
     $time = date("Y-m-d H:i:s");
 
-    $sql0 = "SELECT currentquestion FROM game WHERE gamepin=$gpin";
+    $sql0 = "SELECT currentquestion FROM game WHERE gamepin='$gpin'";
     $result0 = $conn->query($sql0);
     // if game started
     if ($result0->num_rows > 0) {
@@ -87,7 +101,7 @@ if($redirect) {
             $currentquestion = $row["currentquestion"];
         }
 
-        echo $currentquestion;
+        echo "Currentquestion: " . $currentquestion;
         $questionid = $currentquestion;
     }
 
@@ -108,6 +122,7 @@ if($redirect) {
         }
     }
 
+
     echo "<br>";
     echo "<br>";
     echo "<br>";
@@ -118,6 +133,8 @@ if($redirect) {
     echo "<br>";
     echo "<br>";
     echo "<br>";
+
+
 
     switch ($answer) {
         case "1":
@@ -153,12 +170,11 @@ if($redirect) {
             }
             break;
         default:
-            echo "Error!";
+            redirect();
     }
 
-    if (isset($_GET["answerid"])) {
-        $answerid = $_GET["answerid"];
-
+    $answerid = $answer;
+        //TODO: die $questionid wird irgendwie falsch gelesen...
 
         if ($right) {
             $sql2 = "INSERT INTO results (gamepin, playerid, timestamp, questionid, points, answerid)
@@ -185,9 +201,6 @@ if($redirect) {
         }
 
     } else {
-        echo "Ungültige Antwort...";
-    }
-} else {
     redirect();
 }
 
