@@ -3,13 +3,56 @@
 include 'conf.php';
 session_start();
 
-
 // Create connection
 $conn = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_database);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
+
+$gamepin = 238477;
+$round = 1;
+
+$answer1 = 0;
+$answer2 = 0;
+$answer3 = 0;
+$answer4 = 0;
+
+$sql = "SELECT answerid
+  FROM `results` WHERE `gamepin` = $gamepin AND `questionid` = $round ORDER BY answerid ASC";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    // output data of each row
+    while ($row = $result->fetch_assoc()) {
+        //TODO: Schauen, ob es weniger als 4 Fragen hat
+        switch ($row["answerid"]) {
+            case 1:
+                $answer1++;
+                break;
+            case 2:
+                $answer2++;
+                break;
+            case 3:
+                $answer3++;
+                break;
+            case 4:
+                $answer4++;
+                break;
+            default:
+                break;
+        }
+    }
+}
+
+echo $answer1;
+echo $answer2;
+echo $answer3;
+echo $answer4;
+
+
+/*
+
 
 
 
@@ -56,4 +99,4 @@ echo "<br>";
 echo $solution1[2];
 echo $solution2[2];
 echo $solution3[2];
-echo $solution4[2];
+echo $solution4[2];*/

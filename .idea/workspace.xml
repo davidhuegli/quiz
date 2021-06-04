@@ -20,12 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6085cd39-fc72-4dbc-9337-c0d80122f5e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/player_stats.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher_qresult.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player_runquiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_runquiz.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player_wait.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_wait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher_runquiz-answers.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_runquiz-answers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_gameplay.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_gameplay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher_qresult.php" beforeDir="false" afterPath="$PROJECT_DIR$/teacher_qresult.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +82,11 @@
       <workItem from="1616746534333" duration="4925000" />
       <workItem from="1617952278053" duration="4551000" />
       <workItem from="1618299325880" duration="184000" />
+      <workItem from="1619760755570" duration="1715000" />
+      <workItem from="1619765221625" duration="6009000" />
+      <workItem from="1621581566765" duration="3741000" />
+      <workItem from="1622186490236" duration="4320000" />
+      <workItem from="1622791959689" duration="2553000" />
     </task>
     <servers />
   </component>
@@ -115,15 +119,18 @@
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614416462279" />
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614416582520" />
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1613723562703" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1622795844536">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1622795844536" />
+    <state x="0" y="0" width="1893" height="1027" key="dock-window-1" timestamp="1619762487567">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" width="1893" height="1027" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1619762487567" />
     <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1614331607250">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614331607250" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1613727188224">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613727188224" />
     <state x="1137" y="266" width="672" height="678" key="search.everywhere.popup" timestamp="1614329141960">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

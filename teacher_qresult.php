@@ -26,10 +26,10 @@ if (isset($_SESSION["gamepin"])) {
 }
 
 $nextround = $_SESSION["round"];
-$round = $nextround--;
+$round = $nextround - 1;
 
-echo $nextround;
-echo $round;
+/*echo $nextround;
+echo $round;*/
 
 $answer1 = 0;
 $answer2 = 0;
@@ -62,7 +62,8 @@ if ($result->num_rows > 0) {
     }
 }
 
-$sql2 = "SELECT COUNT(answerid) AS answerCount FROM `results` WHERE `gamepin` = 765563 AND `questionid` = 2";
+
+$sql2 = "SELECT COUNT(answerid) AS answerCount FROM `results` WHERE `gamepin` = $gamepin AND `questionid` = $round";
 $result2 = $conn->query($sql2);
 if ($result2->num_rows > 0) {
     // output data of each row

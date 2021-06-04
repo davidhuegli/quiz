@@ -80,7 +80,7 @@ if (isset($_GET["id"])) {
     <p>Game Pin <?php echo $gamepin ?></p>
     <?php
 
-    echo "<img src='https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=http%3A%2F%2F10.20.20.127%2Fbegabtenfoerderung-lucien%2Fquiz%2Fplayer_gameplay.php%2F?gpin=$gamepin%2F&choe=UTF-8' title='Beim Quiz anmelden' />";
+    echo "<img src='https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https%3A%2F%2Flovefield.goip.de%2Fquiz%2Fplayer_gameplay.php%2F?gpin=$gamepin%2F&choe=UTF-8' title='Beim Quiz anmelden' />";
 
     ?>
     <p></p>
