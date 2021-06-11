@@ -60,6 +60,8 @@ function redirect() {
         case 2:
             header("refresh:3; url=player_stats.php?redirect=1"); //TODO: player_stats.php und dann von dort aus die Weiterleitung nach Bild auf Handy machen
             break;
+        case 3:
+            header("refresh:3; url=player_podium.php");
         default:
             break;
     }
