@@ -63,7 +63,7 @@ if ($result->num_rows > 0) {
 }
 
 
-$sql2 = "SELECT COUNT(answerid) AS answerCount FROM `results` WHERE `gamepin` = $gamepin AND `questionid` = $round";
+$sql2 = "SELECT COUNT(answerid) AS answerCount FROM `results` WHERE `gamepin` = $gamepin AND `questionid` = $round AND `answerid` != 0";
 $result2 = $conn->query($sql2);
 if ($result2->num_rows > 0) {
     // output data of each row
