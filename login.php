@@ -15,7 +15,7 @@ include 'conf.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is comming from a form
 
-
+    session_start();
     $u_name = filter_var($_POST["user_name"], FILTER_SANITIZE_STRING);
     $u_password = filter_var($_POST["user_password"], FILTER_SANITIZE_STRING);
 
