@@ -20,15 +20,17 @@ if (isset($_GET["gpin"])) {
 
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style/quiz.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 <body>
+<div class="login">
 <form action="player_wait.php" method="post">
     <label for="gpin">GamePin:</label><br>
-    <input type="text" id="gpin" name="gpin" value="<?php echo $gpin; ?>"><br>
+    <input class="logininput" type="text" id="gpin" name="gpin" value="<?php echo $gpin; ?>"><br>
     <label for="nickname">Nickname:</label><br>
-    <input type="text" id="nickname" name="nickname"><br><br>
-    <input type="submit" value="Spiel beitreten">
+    <input class="logininput type="text" id="nickname" name="nickname"><br><br>
+    <input class="btn" type="submit" value="Spiel beitreten">
 </form>
+</div>
 </body>
 </html>

@@ -48,13 +48,15 @@ if ($result0->num_rows > 0) {
     while ($row = $result0->fetch_assoc()) {
         $isStarted = $row["started"];
     }
-    echo $isStarted;
+    //echo $isStarted;
 } else {
     exit ("Das Game, wurde nicht (mehr) gefunden!");
 }
 
-if($isStarted == 3) {
-    header("refresh:2; url=player_result.php");
+if($isStarted == 2) {
+    header("refresh:0; url=player_stats.php");
+} elseif($isStarted == 3) {
+    header("refresh:0; url=player_podium.php");
 }
 
 

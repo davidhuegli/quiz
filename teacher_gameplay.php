@@ -32,11 +32,11 @@ if (isset($_GET["id"])) {
         echo $gamepin;
 
 
-        $sql = "INSERT INTO game (userid, quizid, gamepin, date, started)
-              VALUES('$userid', '$quizid', '$gamepin', '$time', '0')";
+        $sql = "INSERT INTO game (userid, quizid, gamepin, date, started, currentquestion)
+              VALUES('$userid', '$quizid', '$gamepin', '$time', '0', '0')";
 
         if ($conn->query($sql) === TRUE) {
-            echo "Erfolg! Das Game wurde registriert!";
+            //echo "Erfolg! Das Game wurde registriert!";
         } else {
             echo "Error: Game konnte nicht in der Datenbank registriert werden! Fehler: " . $conn->error;
         }
@@ -76,11 +76,11 @@ if (isset($_GET["id"])) {
 <body>
 
 <div class="header_game">
-    <p>Join at ...</p>
-    <p>Game Pin <?php echo $gamepin ?></p>
+    <p>Join at <b><u>quiz.itux.ch</u></b></p>
+    <p>Game Pin <b><u><?php echo $gamepin ?></b></u></p>
     <?php
 
-    echo "<img src='https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https%3A%2F%2Flovefield.goip.de%2Fquiz%2Fplayer_gameplay.php%2F?gpin=$gamepin%2F&choe=UTF-8' title='Beim Quiz anmelden' />";
+    echo "<img src='https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=https%3A%2F%2Flovefield.goip.de%2Fquiz%2Fplayer_login.php%2F?gpin=$gamepin&choe=UTF-8' title='Beim Quiz anmelden' />";
 
     ?>
     <p></p>

@@ -45,7 +45,10 @@ switch ($isStarted) {
         break;
     case 2:
         echo "Auswertung auf dem Beamer.";
-        header("refresh:3; url=player_stats.php");
+        header("refresh:5; url=player_stats.php");
+        break;
+    case 3:
+        header("refresh:0; url=player_podium.php");
         break;
     default:
         break;
