@@ -176,7 +176,7 @@ if($redirect) {
     }
 
     $answerid = $answer;
-
+        //TODO: die $questionid wird irgendwie falsch gelesen...
 
         if ($right) {
             $sql2 = "INSERT INTO results (gamepin, playerid, timestamp, questionid, points, answerid)

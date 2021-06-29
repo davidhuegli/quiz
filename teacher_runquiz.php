@@ -45,7 +45,6 @@ if ($conn->query($sql) === TRUE) {
             array_push($questions, $row["questionid"]);
             //array_push($questionsfull, $row["question"]);
             $questionfull[] = $row["question"];
-            $questiontime = $row["time"];
         }
     }
 
@@ -109,7 +108,8 @@ if (isset($_SESSION["round"])) {
         //$_SESSION["round"] = $round;
         header("refresh:5; url=teacher_runquiz-answers.php");
     } else {
-        header("refresh:0; url=teacher_podium.php");
+        echo "Keine Fragen mehr, normalerweise käme jetzt die Auswertung!";
+        header("refresh:3; url=teacher_podium.php");
     }
 } else {
     $round = 0;

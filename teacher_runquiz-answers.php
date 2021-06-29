@@ -45,7 +45,6 @@ if ($conn->query($sql) === TRUE) {
         $answer2 = [];
         $answer3 = [];
         $answer4 = [];
-        $questiontime = 15;
         while ($row = $result->fetch_assoc()) {
             array_push($questions, $row["questionid"]);
             //array_push($questionsfull, $row["question"]);
@@ -73,24 +72,27 @@ if ($conn->query($sql) === TRUE) {
     <meta http-equiv="Expires" content="0" />
 </head>
 <body>
+GameID: <?php echo $gameid; ?>
+<br>
+GamePin3: <?php echo $gamepin; ?>
+<br>
+alle Inhalte: <?php print_r($questions); ?><br>
+gesamte Anzahl im Array: <?php $sum = count($questions);
+echo $sum; ?><br>
 value 0 aus dem Array (und Antworten):
 <?php
 if (isset($_SESSION["round"])) {
     $round = $_SESSION["round"];
     if ($round < $sum) {
-        //echo $round;
+        echo $round;
         echo $questionfull[$round];
-        echo "<br>";
         echo $answer1[$round];
-        echo "<br>";
         echo $answer2[$round];
-        echo "<br>";
         echo $answer3[$round];
-        echo "<br>";
         echo $answer4[$round];
         $round++;
         $_SESSION["round"] = $round;
-        header("refresh:$questiontime; url=teacher_qresult.php");
+        header("refresh:5; url=teacher_qresult.php");
     } else {
         echo "Keine Fragen mehr, normalerweise käme jetzt die Auswertung!";
         header("refresh:3; url=teacher_podium.php");
