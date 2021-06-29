@@ -61,6 +61,7 @@ if (isset($_GET["id"])) {
     echo "Keine GameID gesetzt, normalerweise würde jetzt eine Weiterleitung kommen...";
 }
 
+
 ?>
 
 <html>
