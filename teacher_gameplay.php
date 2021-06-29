@@ -22,7 +22,6 @@ if (isset($_GET["id"])) {
     if (isset($_SESSION["gameid"])) {
         $gameid = $_SESSION["gameid"];
         $gamepin = $_SESSION["gamepin"];
-        $userid = $_SESSION["userid"];
     } else {
 
         $gamepin = (rand(100000, 999999));
